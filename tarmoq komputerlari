@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarmoq kompyuteri</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ background:#070d1c;
+ color:white;
+ font-family:Arial,sans-serif;
+ overflow:hidden;
+}
+.slide{
+ display:none;
+ min-height:100vh;
+ padding:65px 9%;
+ align-items:center;
+ justify-content:center;
+ flex-direction:column;
+ background:radial-gradient(circle at 80% 20%,#183c69 0%,#0b1730 40%,#070d1c 80%);
+ animation:show .5s;
+}
+.slide.active{display:flex}
+@keyframes show{
+ from{opacity:0;transform:translateY(15px)}
+ to{opacity:1;transform:translateY(0)}
+}
+.tag{
+ color:#45d9ff;
+ letter-spacing:4px;
+ font-size:13px;
+ font-weight:bold;
+}
+h1{font-size:clamp(38px,7vw,75px);margin:20px 0}
+h2{font-size:clamp(30px,5vw,48px);color:#55d9ff}
+p{font-size:19px;line-height:1.8;color:#c5d4e9}
+.accent{color:#50d9ff}
+.cardbox{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+ gap:20px;
+ width:100%;
+ margin-top:30px;
+}
+.card{
+ background:#142744;
+ border:1px solid #28527a;
+ padding:25px;
+ border-radius:18px;
+}
+.card h3{color:#55d9ff;font-size:22px}
+.card p{font-size:16px}
+.icon{font-size:42px}
+.network{
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ gap:18px;
+ flex-wrap:wrap;
+ margin:30px;
+}
+.node{
+ background:#123b65;
+ border:2px solid #50d9ff;
+ padding:20px;
+ border-radius:15px;
+ text-align:center;
+}
+.line{color:#50d9ff;font-size:28px}
+.footer{
+ position:fixed;
+ bottom:20px;
+ left:0;
+ right:0;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ gap:20px;
+}
+button{
+ background:#087fce;
+ color:white;
+ border:0;
+ padding:12px 25px;
+ border-radius:10px;
+ font-size:16px;
+ cursor:pointer;
+}
+button:hover{background:#15b8ed}
+#count{color:#55d9ff}
+@media(max-width:600px){
+ .slide{padding:45px 7%}
+ p{font-size:16px}
+ .cardbox{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<section class="slide active">
+ <div class="tag">INFORMATIKA • TAQDIMOT</div>
+ <h1>TARMOQ<br><span class="accent">KOMPYUTERI</span></h1>
+ <p>Kompyuter tarmoqlari va ularning imkoniyatlari</p>
+ <div class="network">
+  <div class="node">💻<br>Kompyuter</div>
+  <div class="line">⟷</div>
+  <div class="node">🌐<br>Tarmoq</div>
+  <div class="line">⟷</div>
+  <div class="node">🖥️<br>Server</div>
+ </div>
+ <div class="tag">BILIM • TEXNOLOGIYA • KELAJAK</div>
+</section>
+
+<section class="slide">
+ <div class="tag">01 — TUSHUNCHA</div>
+ <h2>Kompyuter tarmog‘i nima?</h2>
+ <p>Kompyuter tarmog‘i — ikki yoki undan ortiq kompyuter va boshqa qurilmalarning o‘zaro bog‘lanib, ma’lumot almashish tizimidir.</p>
+ <div class="cardbox">
+  <div class="card"><div class="icon">📡</div><h3>Aloqa</h3><p>Qurilmalar bir-biri bilan bog‘lanadi.</p></div>
+  <div class="card"><div class="icon">📁</div><h3>Ma’lumot</h3><p>Fayllar va axborotlar almashiladi.</p></div>
+  <div class="card"><div class="icon">🌍</div><h3>Internet</h3><p>Dunyo bo‘ylab axborot olish imkoniyati.</p></div>
+ </div>
+</section>
+
+<section class="slide">
+ <div class="tag">02 — TURLARI</div>
+ <h2>Tarmoq turlari</h2>
+ <div class="cardbox">
+  <div class="card">
+   <div class="icon">🏠</div>
+   <h3>LAN</h3>
+   <p>Mahalliy tarmoq. Uy, maktab yoki ofisdagi qurilmalarni bog‘laydi.</p>
+  </div>
+  <div class="card">
+   <div class="icon">🏙️</div>
+   <h3>MAN</h3>
+   <p>Shahar miqyosidagi kompyuter tarmog‘i.</p>
+  </div>
+  <div class="card">
+   <div class="icon">🌐</div>
+   <h3>WAN</h3>
+   <p>Katta hududlarni, hatto davlatlarni bog‘laydigan tarmoq.</p>
+  </div>
+ </div>
+</section>
+
+<section class="slide">
+ <div class="tag">03 — QURILMALAR</div>
+ <h2>Tarmoqning asosiy qismlari</h2>
+ <div class="cardbox">
+  <div class="card">
+   <div class="icon">🖥️</div>
+   <h3>Kompyuter</h3>
+   <p>Ma’lumotlarni yuboradi va qabul qiladi.</p>
+  </div>
+  <div class="card">
+   <div class="icon">📶</div>
+   <h3>Router</h3>
+   <p>Qurilmalarni tarmoqqa ulaydi va ma’lumot yo‘nalishini belgilaydi.</p>
+  </div>
+  <div class="card">
+   <div class="icon">🔌</div>
+   <h3>Kabel</h3>
+   <p>Qurilmalar orasida simli aloqa hosil qiladi.</p>
+  </div>
+  <div class="card">
+   <div class="icon">🗄️</div>
+   <h3>Server</h3>
+   <p>Tarmoqdagi boshqa qurilmalarga xizmat ko‘rsatadi.</p>
+  </div>
+ </div>
+</section>
+
+<section class="slide">
+ <div class="tag">04 — XULOSA</div>
+ <h2>Tarmoqning afzalliklari</h2>
+ <div class="cardbox">
+  <div class="card"><h3>⚡ Tezkorlik</h3><p>Ma’lumotlar tez almashiladi.</p></div>
+  <div class="card"><h3>🤝 Hamkorlik</h3><p>Bir nechta foydalanuvchi birgalikda ishlaydi.</p></div>
+  <div class="card"><h3>🔐 Xavfsizlik</h3><p>Ma’lumotlarni himoyalash imkoniyatlari mavjud.</p></div>
+ </div>
+ <h1 class="accent">E'TIBORINGIZ UCHUN RAHMAT!</h1>
+ <p>Texnologiyalar — kelajak sari qadam!</p>
+</section>
+
+<div class="footer">
+ <button onclick="change(-1)">← Orqaga</button>
+ <span id="count">1 / 5</span>
+ <button onclick="change(1)">Keyingi →</button>
+</div>
+
+<script>
+let current=0;
+const slides=document.querySelectorAll('.slide');
+function change(step){
+ current+=step;
+ if(current<0)current=0;
+ if(current>=slides.length)current=slides.length-1;
+ slides.forEach((s,i)=>s.classList.toggle('active',i===current));
+ document.getElementById('count').textContent=(current+1)+' / 5';
+}
+document.addEventListener('keydown',e=>{
+ if(e.key==='ArrowRight')change(1);
+ if(e.key==='ArrowLeft')change(-1);
+});
+</script>
+</body>
+</html>
