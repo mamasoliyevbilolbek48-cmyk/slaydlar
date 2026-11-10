@@ -1,0 +1,2 @@
+# slaydlar
+Mening prezentatsiyam
